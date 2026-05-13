@@ -15,12 +15,9 @@ headers = {
 
 payload = {"filter": {"Page": 1, "Size": 50, "MobileEnabled": True}}
 response = requests.post(API_URL, headers=headers, json=payload)
-print("Status:", response.status_code)
-print("Response:", response.text[:500])
 data = response.json()
 
 groups = data.get("d", [])
-print("Groups found:", len(groups))
 
 current_ids = []
 
