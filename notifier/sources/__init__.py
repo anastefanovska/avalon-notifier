@@ -4,6 +4,7 @@ from .karti import KartiSource
 from .kupikarta import KupiKartaSource
 from .mktickets import MkTicketsSource
 from .ticketx import TicketXSource
+from .wayin import WayInSource
 
 ALL_SOURCES: list[Source] = [
     AvalonSource(),
@@ -11,6 +12,7 @@ ALL_SOURCES: list[Source] = [
     KartiSource(),
     MkTicketsSource(),
     TicketXSource(),
+    WayInSource(),
 ]
 
 __all__ = [
@@ -20,4 +22,5 @@ __all__ = [
     "KupiKartaSource",
     "MkTicketsSource",
     "TicketXSource",
+    "WayInSource",
 ]
